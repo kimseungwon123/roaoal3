@@ -10,11 +10,7 @@ namespace mysql1
         {
             Console.Write("1. 검색, 2. 삽입, 3. 삭제, 4. 전체조회");
             int ansMenu = Convert.ToInt32(Console.ReadLine());
-            
-
-            // SQL: game_info와 game_price를 조인해서 이름과 가격을 가져옵니다.
-            // LIKE 연산자를 사용해 부분 일치 검색을 합니다.
-
+        
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -322,3 +318,4 @@ namespace mysql1
         }
     }
 }
+
